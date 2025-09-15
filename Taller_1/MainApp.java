@@ -6,7 +6,7 @@ public class MainApp{
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         //Libro
-
+        System.out.println("\n*****************************************");
         System.out.println("Ingrese el titulo del libro: ");
         String Titulo= teclado.nextLine();
         System.out.println("Ingrese el autor del libro: ");
@@ -19,6 +19,7 @@ public class MainApp{
         
 
         // Cuenta bancaria
+        System.out.println("\n*****************************************");
         System.out.println("Ingrese el numero de cuenta:  ");
         int num = teclado.nextInt();
         System.out.println("Ingrese el saldo: ");
@@ -29,6 +30,7 @@ public class MainApp{
         CuentaBancaria cuenta = new CuentaBancaria(num,saldo,tipo);
 
         //Estudiante
+        System.out.println("\n*****************************************");
         System.out.println("Ingrese el nombre del estudiante:  ");
         String nombre = teclado. nextLine();
 
@@ -42,6 +44,7 @@ public class MainApp{
         Estudiante Estudiante = new Estudiante(nombre,edad,Curso);
 
         //Mostrar resultados
+        System.out.println("\n*****************************************");
         System.out.println("\n**************** RESULTADOS ***********");
         System.out.println("Libro:");
         libro.MostrarDetalles();

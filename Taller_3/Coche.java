@@ -1,38 +1,38 @@
 public class Coche {
-    private String m;
-    private String modelo;
+    private String Marca_de_Carro;
+    private String Modelo_de_Carro;
     // Atributo estático compartido entre todas las instancias
-    private static int contadorCoches = 0;
+    private static int Contador_C = 0;
 
     // Constructor
-    public Coche(String m, String modelo) {
-        this.m = m;
-        this.modelo = modelo;
-        contadorCoches++; // Cada vez que se crea un coche, aumenta el contador
+    public Coche(String Marca_de_Carro, String Modelo_de_Carro) {
+        this.Marca_de_Carro = Modelo_de_Carro;
+        this.Modelo_de_Carro=Modelo_de_Carro;
+        Contador_C++; // Aumenta con cada coche nuevo
     }
 
-    // Método estático para mostrar cuántos coches hay
-    public static void mostrarContador() {
-        System.out.println("Número total de coches creados: " + contadorCoches);
+    // Muestra cuantos carros nuevos hay
+    public static void Mostrar_Contador() {
+        System.out.println("Número total de coches creados: " + Contador_C);
     }
 
-    // Método para mostrar la información de un coche
-    public void mostrarDetalles() {
-        System.out.println("m: " + m + " | Modelo: " + modelo);
+    // Información del coche 
+    public void Mostrar_Detalles() {
+        System.out.println("Marca_de_Carro: " + Marca_de_Carro + " | Modelo: " + Modelo_de_Carro);
     }
 }
 
 class MainCoche {
     public static void main(String[] args) {
-        Coche c1 = new Coche("Toyota", "Corolla");
-        Coche c2 = new Coche("Mazda", "CX-5");
-        Coche c3 = new Coche("Chevrolet", "Onix");
+        Coche Carro_1 = new Coche("Toyota", "Hylux");
+        Coche Carro_2 = new Coche("Audi", "A3 Sportback");
+        Coche Carro_3 = new Coche("Volkswagen", "Jetta");
 
-        c1.mostrarDetalles();
-        c2.mostrarDetalles();
-        c3.mostrarDetalles();
+        Carro_1.Mostrar_Detalles();
+        Carro_2.Mostrar_Detalles();
+        Carro_3.Mostrar_Detalles();
 
         // Se llama al método estático desde la clase
-        Coche.mostrarContador();
+        Coche.Mostrar_Contador();
     }
 }
