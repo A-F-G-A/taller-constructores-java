@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class MainApp{
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
@@ -13,7 +12,9 @@ public class MainApp{
         System.out.println("Ingrese la cantidad de paginas: ");
         int Numero_Paginas= teclado.nextInt();
         teclado.nextLine();
+        
         Libro libro = new Libro(Titulo, Autor, Numero_Paginas);
+        
 
         // Cuenta bancaria
         System.out.println("Ingrese el numero de cuenta:  ");
