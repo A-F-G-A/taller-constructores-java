@@ -19,7 +19,7 @@ class Persona {
     }
 
     // Método default para mostrar información
-    void mostrarInfo() {
+    void MostrarInfo() {
         System.out.println("Nombre: " + nombre + ", Edad: " + edad);
     }
 }
