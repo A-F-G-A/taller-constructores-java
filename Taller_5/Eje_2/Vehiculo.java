@@ -1,8 +1,7 @@
+class Vehiculo {  
+    String tipo;   
 
-class Vehiculo {
-    String tipo; // Acceso de paquete
-    
-    Vehiculo(String tipo) {
+    public Vehiculo(String tipo) {   //  constructor con acceso de paquete
         this.tipo = tipo;
     }
 }

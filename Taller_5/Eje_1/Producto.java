@@ -1,18 +1,17 @@
-// Producto.java  (sin package)
 class Producto {
-    String nombre;    // acceso default
-    double precio;    // acceso default
-    int stock;        // acceso default
+    String Dombre;    
+    double Precio;    // acceso default
+    int stock;       
 
-    Producto(String nombre, double precio, int stock) {
-        this.nombre = nombre;
-        this.precio = precio;
+    Producto(String Dombre, double Precio, int stock) {
+        this.Dombre = Dombre;
+        this.Precio = Precio;
         this.stock = stock;
     }
 
     void mostrarInfo() { // método default
-        System.out.println("Producto: " + nombre);
-        System.out.println("Precio: $" + precio);
-        System.out.println("Stock disponible: " + stock);
+        System.out.println("Producto: " + Dombre);
+        System.out.println("Precio: $" + Precio);
+        System.out.println("stock disponible: " + stock);
     }
 }
