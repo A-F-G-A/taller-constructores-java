@@ -19,7 +19,7 @@ public class Empleado {
         }
     }
 
-    public void mostrarInformacion() {
+    public void MostrarInformacion() {
         System.out.println("Empleado: " + Nombre + ", Salario: " + Salario);
     }
 }
