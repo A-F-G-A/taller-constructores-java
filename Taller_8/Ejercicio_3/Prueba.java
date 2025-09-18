@@ -4,7 +4,7 @@ public class Prueba{
         Gerente ger1 = new Gerente("Ana", 5000, "Recursos Humanos");
 
         // Uso de métodos
-        emp1.mostrarDetalles();  
-        ger1.mostrarDetalles();
+        emp1.MostrarDetalles();  
+        ger1.MostrarDetalles();
     }
 }
