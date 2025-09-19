@@ -9,6 +9,11 @@ class Estudiante extends Persona {
     public void presentarse() {
         System.out.println("Hola, soy un estudiante.");
     }
+
+    public void MostrarDetalles() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'MostrarDetalles'");
+    }
 }
 
 class Profesor extends Persona {

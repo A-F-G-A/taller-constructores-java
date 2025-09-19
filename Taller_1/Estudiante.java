@@ -1,70 +1,37 @@
-import java.util.Scanner;
+public class Estudiante {
+    private String nombre;
+    private int edad;
+    private String Curso;
 
-
-public class Estudiante{
-    String Nombre, Curso;
-    int Edad;
-
-    //Constructor por defecto
-
-    public Estudiante(){
-        this.Nombre= "Sin nombre";
-        this.Edad= 0;
-        this.Curso="Ninguno";
-
-
+    // Constructor por defecto
+    public Estudiante() {
+        this.nombre = "Sin nombre";
+        this.edad = 0;
+        this.Curso = "Ninguno";
     }
 
-
-    // Constructor con 2 parametros
-    public Estudiante(String Nombre, int Edad){
-        this.Nombre= Nombre;
-        this.Edad=  Edad;
-        this.Curso=" Ninguno";
-
-
+    // Constructor con 2 parámetros
+    public Estudiante(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.Curso = "Ninguno";
     }
-     // Constructor con 3 parametros usando this()
-    public Estudiante(String Nombre, int Edad, String Curso){
-        this(Nombre, Edad);
-        this.Curso=Curso;
 
+    // Constructor con 3 parámetros usando this()
+    public Estudiante(String nombre, int edad, String Curso) {
+        this(nombre, edad); // llama al constructor de 2 parámetros
+        this.Curso = Curso;
     }
-    // Para mostrar los detalles
-    public void MostrarDetalles(){
-        System.out.println("Nombre: " + Nombre);
-        System.out.println("Edad: " + Edad);
+
+    // Mostrar detalles
+    public void MostrarDetalles() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
         System.out.println("Curso: " + Curso);
     }
-    public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
 
-        System.out.println("Ingrese el nombre del estudiante:  ");
-        String nombre = teclado. nextLine();
-
-        System.out.println("Ingrese la edad: ");
-        int edad= teclado.nextInt();
-        teclado.nextLine();// Limpiamos el buffer
-
-        System.out.println("Ingrese el curso: ");
-        String Curso= teclado. nextLine();
-
-        Estudiante Estudiante1 = new Estudiante(nombre,edad,Curso);
-        Estudiante Estudiante2 = new Estudiante();
-
-
-
-        System.out.println("\nEstudiante con datos ingresados: ");
-        Estudiante1.MostrarDetalles();
-
-        System.out.println("\nEstudiante con constructor por defecto: ");
-        Estudiante2.MostrarDetalles();
-
-
-
-
-
-
+    
+    public String toString() {
+        return "Estudiante [Nombre=" + nombre + ", Edad=" + edad + ", Curso=" + Curso + "]";
     }
-
 }
