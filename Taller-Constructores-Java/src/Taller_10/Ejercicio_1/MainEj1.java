@@ -5,15 +5,14 @@ class Persona {
     }
 
     public void mostrarNombre() {
-        // TODO Auto-generated method stub
+        
         throw new UnsupportedOperationException("Unimplemented method 'mostrarNombre'");
     }
 }
 
-class e_studiante extends Persona {
-    public e_studiante(String nombre, int edad, String curso) {
-        
-    }
+class estudiante extends Persona {
+  
+    
 
     @Override
     public void presentarse() {
@@ -36,7 +35,7 @@ class Profesor extends Persona {
 public class MainEj1 {
     public static void main(String[] args) {
         Persona p1 = new Persona();
-        Persona p2 = new e_studiante(); // Polimorfismo
+        Persona p2 = new estudiante(); // Polimorfismo
         Persona p3 = new Profesor();   // Polimorfismo
 
         p1.presentarse();

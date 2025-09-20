@@ -1,3 +1,4 @@
+package Taller_6.Ejer_3;
 public class Prueba_eje_3 {
     public static void main(String[] args) {
         Banco_solu b = new Banco_solu(5000);

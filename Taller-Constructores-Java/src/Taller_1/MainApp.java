@@ -49,12 +49,12 @@ public class MainApp {
         System.out.println("\n*****************************************");
         System.out.println("\n**************** RESULTADOS ***********");
         System.out.println("Libro:");
-        
+        libro.MostrarDetalles();
         
         System.out.println("\nCuenta Bancaria:");
-     
+        cuenta.MostrarDetalles();
         System.out.println("\nEstudiante:");
-       
+       estudiante.MostrarDetalles();
     }
 }
 

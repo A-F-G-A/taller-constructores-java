@@ -2,7 +2,7 @@ package  Taller_3;
 public class Persona_S {
     private String nombre;
 
-    public Persona(String nombre) {
+    public Persona_S(String nombre) {
         this.nombre = nombre;
     }
 

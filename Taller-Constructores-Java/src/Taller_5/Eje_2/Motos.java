@@ -3,7 +3,7 @@ public class Motos extends Vehiculo {
     public int cilindrada;
 
     public Motos(String tipo, int cilindrada) {
-        super(tipo, tipo); // funciona porque Motos hereda de Vehiculo
+        super(tipo); // funciona porque Motos hereda de Vehiculo
         this.cilindrada = cilindrada;
         
     }
